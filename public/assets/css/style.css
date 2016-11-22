@@ -1,0 +1,19 @@
+h6.wrapper-slider-index{
+overflow: hidden;
+height: 2.7em;
+}
+
+a.navbar-brand.font-logo{
+font-size:25px;
+letter-spacing:9px;
+}
+
+.bold{
+
+    color: black;
+    font-weight: bold;
+}
+
+.btn-download{
+margin-bottom:10px !important;
+}

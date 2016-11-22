@@ -1,0 +1,14 @@
+{
+  "name": "statistic-apps",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "d3": "3",
+    "ejs": "*",
+    "express": "3.4.8",
+    "jsdom": "^9.8.3"
+  }
+}

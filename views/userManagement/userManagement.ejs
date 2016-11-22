@@ -1,0 +1,47 @@
+<%- include ../layouts/header %>
+<!-- Basic table -->
+<div class="panel panel-flat">
+    <div class="panel-heading">
+        <h3 class="panel-title">User Management</h3>
+    </div>
+
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-6 pull-right">
+                <!-- Contextual button for informational alert messages -->
+                <button type="button" class="btn pull-right btn-info">Add User
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Lengkap</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <%if(data.length){
+                    var no =1
+                    for(var i=0;i < data.length;i++){
+                    %>
+                    <td><%=no++ %></td>
+                    <td><%=data[i].nama_lengkap %></td>
+                    <td><%=data[i].email %></td>
+                    <td><%=data[i].username %></td>
+                    <td><button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-signal" aria-hidden="true"></span>Delete</button></td>
+                    <%} }%>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- /basic table -->
